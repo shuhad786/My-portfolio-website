@@ -1051,9 +1051,9 @@
 
   .tech-stack-list {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     list-style: none;
-    padding-right: 200px;
+    margin-left: 800px;
   }
 
   .tech-stack-item-1 {
