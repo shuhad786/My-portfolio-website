@@ -950,8 +950,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 600px;
-    height: 800px;
+    width: 45%;
+    height: 148%;
   }
 
   .intro {
@@ -1655,8 +1655,8 @@
     position: absolute;
     right: 0;
     top: 2770px;
-    width: 550px;
-    height: 352.38px;
+    width: 48%;
+    height: 70%;
   }
 
   .background-2 {
@@ -1791,5 +1791,73 @@
 
   .end-divider {
     display: none;
+  }
+
+  .popup-container {
+    width: 100%;
+  }
+
+  .popup-head {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .popup-title {
+    display: none;
+  }
+
+  .popup-title-desktop {
+    color: black;
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .popup-close {
+    display: block;
+    width: 30px;
+    height: auto;
+  }
+
+  .popup-bar {
+    display: block;
+    background-color: black;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all 1s ease-in-out;
+  }
+
+  .popup-bar:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .popup-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .popup-bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .popup-tech-container {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .popup-tech-container li {
+    margin-left: 10px;
+  }
+
+  .popup-project-image {
+    width: 659px;
+    height: 448px;
   }
 }
