@@ -115,4 +115,34 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   
   ContainerPopup.appendChild(card).appendChild(btn1);
   ContainerPopup.appendChild(card).appendChild(btn2);
+
+  const popupwindow = document.querySelector('.popup-container');
+const popupclose = document.querySelector('.popup-close');
+
+popupopen.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen2.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen3.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen4.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupclose.addEventListener('click', () => {
+  popupwindow.classList.remove('show');
+  maincontainer.style.filter = 'blur(0px)';
+});
+
 }
+
