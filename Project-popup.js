@@ -102,8 +102,8 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   popupWrap.appendChild(card).appendChild(layout1).appendChild(image);
   popupWrap.appendChild(card).appendChild(layout1).appendChild(ContentText1);
   popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
-  popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
-  popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
+  popupWrap.appendChild(card).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
+  popupWrap.appendChild(card).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
 }
 
 const popupwindow = document.querySelector('.popup-container');
