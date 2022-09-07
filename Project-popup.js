@@ -13,7 +13,7 @@ const PopupArray = [{
   button2Img: './images/popup-icon-github.png',
 }];
 
-const ContainerPopup = document.querySelector('.popup');
+const popupWrap = document.querySelector('.popup');
 
 for (let i = 0; i < PopupArray.length; i += 1) {
   const card = document.createElement('div');
@@ -73,7 +73,7 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   li2.innerHTML = PopupArray[i].techstack2;
 
   const li3 = document.createElement('li');
-  li3.innerHTML = PopupArray[i].techstack3;  
+  li3.innerHTML = PopupArray[i].techstack3;
 
   const imageLive = document.createElement('img');
   imageLive.src = PopupArray[i].button1Img;
@@ -91,19 +91,19 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   btn2.innerHTML = PopupArray[i].button2;
   btn2.appendChild(imageSource);
 
-  ContainerPopup.appendChild(card).appendChild(head).appendChild(title1);
-  ContainerPopup.appendChild(card).appendChild(head).appendChild(title2);
-  ContainerPopup.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar1);
-  ContainerPopup.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar2);
-  ContainerPopup.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar3);
-  ContainerPopup.appendChild(card).appendChild(ul).appendChild(li1);
-  ContainerPopup.appendChild(card).appendChild(ul).appendChild(li2);
-  ContainerPopup.appendChild(card).appendChild(ul).appendChild(li3);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(image);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(ContentText1);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
+  popupWrap.appendChild(card).appendChild(head).appendChild(title1);
+  popupWrap.appendChild(card).appendChild(head).appendChild(title2);
+  popupWrap.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar1);
+  popupWrap.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar2);
+  popupWrap.appendChild(card).appendChild(head).appendChild(closebtn).appendChild(bar3);
+  popupWrap.appendChild(card).appendChild(ul).appendChild(li1);
+  popupWrap.appendChild(card).appendChild(ul).appendChild(li2);
+  popupWrap.appendChild(card).appendChild(ul).appendChild(li3);
+  popupWrap.appendChild(card).appendChild(layout1).appendChild(image);
+  popupWrap.appendChild(card).appendChild(layout1).appendChild(ContentText1);
+  popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
+  popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
+  popupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
 }
 
 const popupwindow = document.querySelector('.popup-container');
@@ -186,4 +186,3 @@ popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
   maincontainer.style.filter = 'blur(0px)';
 });
-
