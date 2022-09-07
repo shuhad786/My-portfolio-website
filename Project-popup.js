@@ -22,11 +22,11 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   const head = document.createElement('div');
   head.classList.add('popup-head');
 
-  const layout1 = document.createElement('div');
-  layout1.classList.add('popup-layout1');
+  const L1 = document.createElement('div');
+  L1.classList.add('popup-layout1');
 
-  const layout2 = document.createElement('div');
-  layout2.classList.add('popup-layout2');
+  const L2 = document.createElement('div');
+  L2.classList.add('popup-layout2');
 
   const btnRow = document.createElement('div');
   btnRow.classList.add('btn-row');
@@ -99,11 +99,11 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   PopupWrap.appendChild(card).appendChild(ul).appendChild(li1);
   PopupWrap.appendChild(card).appendChild(ul).appendChild(li2);
   PopupWrap.appendChild(card).appendChild(ul).appendChild(li3);
-  PopupWrap.appendChild(card).appendChild(layout1).appendChild(image);
-  PopupWrap.appendChild(card).appendChild(layout1).appendChild(ContentText1);
-  PopupWrap.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
-  PopupWrap.appendChild(card).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
-  PopupWrap.appendChild(card).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
+  PopupWrap.appendChild(card).appendChild(L1).appendChild(image);
+  PopupWrap.appendChild(card).appendChild(L1).appendChild(ContentText1);
+  PopupWrap.appendChild(card).appendChild(L1).appendChild(layout2).appendChild(ContentText2);
+  PopupWrap.appendChild(card).appendChild(L1).appendChild(L2).appendChild(btnRow).appendChild(btn1);
+  PopupWrap.appendChild(card).appendChild(L1).appendChild(L2).appendChild(btnRow).appendChild(btn2);
 }
 
 const popupwindow = document.querySelector('.popup-container');
