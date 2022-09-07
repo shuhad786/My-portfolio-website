@@ -2,8 +2,8 @@ const PopupArray = [{
     title: 'Multi-Post Stories',
     titleDesktop: 'Keeping track of hundreds  of components website',
     img: './images/popup-background-image.png',
-    text1: 'Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br> Ipsum has been the industrys standard <br> dummy text ever since the 1500s, when <br> an unknown printer took a galley of type <br> and scrambled it to make a type <br> specimen book. It has survived not only <br> five centuries, but also the leap into <br> electronic typesetting, remaining essent',
-    text2: 'Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industrys standard dummy text ever since the 1500s, <br> when an unknown printer took a galley of type and <br> scrambled it 1960s with the releaLorem Ipsum is simply <br> dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industrys standard dummy <br> text ever since the 1500s, when an unknown printer <br> took a galley of type and scrambled it 1960s with the <br> releax map lapora verita.',
+    text1: 'Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry. Lorem<br>Ipsum has been the industrys standard<br>dummy text ever since the 1500s, when<br>an unknown printer took a galley of type<br>and scrambled it to make a type<br>specimen book. It has survived not only<br>five centuries, but also the leap into<br>electronic typesetting, remaining essent',
+    text2: 'Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry. Lorem Ipsum has been the <br> industrys standard dummy text ever since the 1500s, <br> when an unknown printer took a galley of type and <br> scrambled it 1960s with the releaLorem Ipsum is simply <br> dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industrys standard dummy <br> text ever since the 1500s, when an unknown printer <br> took a galley of type and scrambled it 1960s with the <br> releax map lapora verita.',
     techstack1: 'html',
     techstack2: 'Bootstrap',
     techstack3: 'Ruby on rails',
@@ -13,7 +13,7 @@ const PopupArray = [{
     button2Img: './images/popup-icon-github.png',
   }];
 
-  const ContainerPopup = document.querySelector('.popup');
+const ContainerPopup = document.querySelector('.popup');
 
 for (let i = 0; i < PopupArray.length; i += 1) {
   const card = document.createElement('div');
@@ -21,6 +21,15 @@ for (let i = 0; i < PopupArray.length; i += 1) {
 
   const head = document.createElement('div');
   head.classList.add('popup-head');
+
+  const layout1 = document.createElement('div');
+  layout1.classList.add('popup-layout1');
+
+  const layout2 = document.createElement('div');
+  layout2.classList.add('popup-layout2');
+
+  const btnRow = document.createElement('div');
+  btnRow.classList.add('btn-row');
 
   const title1 = document.createElement('h2');
   title1.classList.add('popup-title');
@@ -69,37 +78,18 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   const imageLive = document.createElement('img');
   imageLive.src = PopupArray[i].button1Img;
 
-  const imageLive2 = document.createElement('img');
-  imageLive2.src = PopupArray[i].button1Img;
-
   const btn1 = document.createElement('button');
   btn1.classList.add('btn1');
   btn1.innerHTML = PopupArray[i].button1;
   btn1.appendChild(imageLive);
 
-  const btn3 = document.createElement('button');
-  btn3.classList.add('btn1');
-  btn3.innerHTML = PopupArray[i].button1;
-  btn3.appendChild(imageLive2);
-
   const imageSource = document.createElement('img');
   imageSource.src = PopupArray[i].button2Img;
-
-  const imageSource2 = document.createElement('img');
-  imageSource2.src = PopupArray[i].button2Img;
 
   const btn2 = document.createElement('button');
   btn2.classList.add('btn2');
   btn2.innerHTML = PopupArray[i].button2;
   btn2.appendChild(imageSource);
-
-  const btn4 = document.createElement('button');
-  btn4.classList.add('btn2');
-  btn4.innerHTML = PopupArray[i].button2;
-  btn4.appendChild(imageSource2);
-
-  const btnRow = document.createElement('div');
-  btnRow.classList.add('btn-row');
 
   ContainerPopup.appendChild(card).appendChild(head).appendChild(title1);
   ContainerPopup.appendChild(card).appendChild(head).appendChild(title2);
@@ -109,33 +99,86 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   ContainerPopup.appendChild(card).appendChild(ul).appendChild(li1);
   ContainerPopup.appendChild(card).appendChild(ul).appendChild(li2);
   ContainerPopup.appendChild(card).appendChild(ul).appendChild(li3);
-  ContainerPopup.appendChild(card).appendChild(image);
-  ContainerPopup.appendChild(card).appendChild(ContentText1);
-  ContainerPopup.appendChild(card).appendChild(ContentText2);
-  
-  ContainerPopup.appendChild(card).appendChild(btn1);
-  ContainerPopup.appendChild(card).appendChild(btn2);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(image);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(ContentText1);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
+}
 
-  const popupwindow = document.querySelector('.popup-container');
+const popupwindow = document.querySelector('.popup-container');
 const popupclose = document.querySelector('.popup-close');
+const mobile1 = document.querySelector('.Mproject-button-1');
+const mobile2 = document.querySelector('.Mproject-button-2');
+const mobile3 = document.querySelector('.Mproject-button-3');
+const mobile4 = document.querySelector('.Mproject-button-4');
+const mobile5 = document.querySelector('.Mproject-button-5');
+const mobile6 = document.querySelector('.Mproject-button-6');
+const popupopen = document.querySelector('.project-button-1');
+const popupopen2 = document.querySelector('.project-button-2');
+const popupopen3 = document.querySelector('.project-button-3');
+const popupopen4 = document.querySelector('.project-button-4');
+const popupopen5 = document.querySelector('.project-button-5');
+const popupopen6 = document.querySelector('.project-button-6');
+const maincontainer = document.querySelector('.main-container');
+
+mobile1.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile2.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile3.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile4.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile5.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile6.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
 
 popupopen.addEventListener('click', () => {
-  popupwindow.classList.toggle('show');
+  popupwindow.classList.add('show');
   maincontainer.style.filter = 'blur(50px)';
 });
 
 popupopen2.addEventListener('click', () => {
-  popupwindow.classList.toggle('show');
+  popupwindow.classList.add('show');
   maincontainer.style.filter = 'blur(50px)';
 });
 
 popupopen3.addEventListener('click', () => {
-  popupwindow.classList.toggle('show');
+  popupwindow.classList.add('show');
   maincontainer.style.filter = 'blur(50px)';
 });
 
 popupopen4.addEventListener('click', () => {
-  popupwindow.classList.toggle('show');
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen5.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen6.addEventListener('click', () => {
+  popupwindow.classList.add('show');
   maincontainer.style.filter = 'blur(50px)';
 });
 
@@ -143,6 +186,4 @@ popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
   maincontainer.style.filter = 'blur(0px)';
 });
-
-}
 
