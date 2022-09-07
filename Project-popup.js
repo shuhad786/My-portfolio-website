@@ -103,12 +103,17 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   PopupWrap.appendChild(card).appendChild(L1).appendChild(ContentText1);
   PopupWrap.appendChild(card).appendChild(L1).appendChild(L2).appendChild(ContentText2);
   PopupWrap
-  .appendChild(card)
-  .appendChild(L1)
-  .appendChild(L2)
-  .appendChild(btnRow)
-  .appendChild(btn1);
-  PopupWrap.appendChild(card).appendChild(L1).appendChild(L2).appendChild(btnRow).appendChild(btn2);
+      .appendChild(card)
+      .appendChild(L1)
+      .appendChild(L2)
+      .appendChild(btnRow)
+      .appendChild(btn1);
+  PopupWrap
+      .appendChild(card)
+      .appendChild(L1)
+      .appendChild(L2)
+      .appendChild(btnRow)
+      .appendChild(btn2);
 }
 
 const popupwindow = document.querySelector('.popup-container');
