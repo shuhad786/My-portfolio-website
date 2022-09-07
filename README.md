@@ -10,7 +10,7 @@ Created a new project for my portfolio, which is derived from the figma template
 ## Built With
 
 - Major languages
-Html and css
+Html and css and javascript
 - Frameworks
 NodeJs, Npm
 - Technologies used
