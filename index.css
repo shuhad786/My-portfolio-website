@@ -1053,7 +1053,6 @@
 
   .popup-layout2 {
     padding-top: 5px;
-    margin-left: 15px;
   }
 
   .popup-project-image {
@@ -2167,7 +2166,7 @@
 
   .popup-container {
     display: flex;
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     flex-direction: column;
@@ -2181,6 +2180,7 @@
 
   .popup-container.show {
     box-sizing: border-box;
+    position: fixed;
     background: white;
     display: flex;
     left: 7%;
