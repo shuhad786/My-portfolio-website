@@ -1,17 +1,17 @@
 const PopupArray = [{
-    title: 'Multi-Post Stories',
-    titleDesktop: 'Keeping track of hundreds  of components website',
-    img: './images/popup-background-image.png',
-    text1: 'Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br> Ipsum has been the industrys standard <br> dummy text ever since the 1500s, when <br> an unknown printer took a galley of type <br> and scrambled it to make a type <br> specimen book. It has survived not only <br> five centuries, but also the leap into <br> electronic typesetting, remaining essent',
-    text2: 'Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industrys standard dummy text ever since the 1500s, <br> when an unknown printer took a galley of type and <br> scrambled it 1960s with the releaLorem Ipsum is simply <br> dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industrys standard dummy <br> text ever since the 1500s, when an unknown printer <br> took a galley of type and scrambled it 1960s with the <br> releax map lapora verita.',
-    techstack1: 'html',
-    techstack2: 'Bootstrap',
-    techstack3: 'Ruby on rails',
-    button1: 'See Live',
-    button2: 'See Source',
-    button1Img: './images/popup-icon-see project.png',
-    button2Img: './images/popup-icon-github.png',
-  }];
+  title: 'Multi-Post Stories',
+  titleDesktop: 'Keeping track of hundreds  of components website',
+  img: './images/popup-background-image.png',
+  text1: 'Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry. Lorem <br> Ipsum has been the industrys standard <br> dummy text ever since the 1500s, when <br> an unknown printer took a galley of type <br> and scrambled it to make a type <br> specimen book. It has survived not only <br> five centuries, but also the leap into <br> electronic typesetting, remaining essent',
+  text2: 'Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the <br> industrys standard dummy text ever since the 1500s, <br> when an unknown printer took a galley of type and <br> scrambled it 1960s with the releaLorem Ipsum is simply <br> dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industrys standard dummy <br> text ever since the 1500s, when an unknown printer <br> took a galley of type and scrambled it 1960s with the <br> releax map lapora verita.',
+  techstack1: 'html',
+  techstack2: 'Bootstrap',
+  techstack3: 'Ruby on rails',
+  button1: 'See Live',
+  button2: 'See Source',
+  button1Img: './images/popup-icon-see project.png',
+  button2Img: './images/popup-icon-github.png',
+}];
 
 const ContainerPopup = document.querySelector('.popup');
 
@@ -73,7 +73,7 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   li2.innerHTML = PopupArray[i].techstack2;
 
   const li3 = document.createElement('li');
-  li3.innerHTML = PopupArray[i].techstack3;  
+  li3.innerHTML = PopupArray[i].techstack3;
 
   const imageLive = document.createElement('img');
   imageLive.src = PopupArray[i].button1Img;
@@ -101,9 +101,12 @@ for (let i = 0; i < PopupArray.length; i += 1) {
   ContainerPopup.appendChild(card).appendChild(ul).appendChild(li3);
   ContainerPopup.appendChild(card).appendChild(layout1).appendChild(image);
   ContainerPopup.appendChild(card).appendChild(layout1).appendChild(ContentText1);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(ContentText2);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn1);
-  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2).appendChild(btnRow).appendChild(btn2);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2)
+  .appendChild(ContentText2);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2)
+  .appendChild(btnRow).appendChild(btn1);
+  ContainerPopup.appendChild(card).appendChild(layout1).appendChild(layout2)
+  .appendChild(btnRow).appendChild(btn2);
 }
 
 const popupwindow = document.querySelector('.popup-container');
@@ -186,4 +189,3 @@ popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
   maincontainer.style.filter = 'blur(0px)';
 });
-
