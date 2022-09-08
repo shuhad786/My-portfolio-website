@@ -135,10 +135,6 @@ for (let i = 0; i < ProjectArray1.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-1');
   btn.innerHTML = ProjectArray1[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(btn);
@@ -188,10 +184,6 @@ for (let i = 0; i < ProjectArray2.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-2');
   btn.innerHTML = ProjectArray2[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(title);
@@ -246,10 +238,6 @@ for (let i = 0; i < ProjectArray3.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-3');
   btn.innerHTML = ProjectArray3[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(title);
@@ -304,10 +292,6 @@ for (let i = 0; i < ProjectArray4.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-4');
   btn.innerHTML = ProjectArray4[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(title);
@@ -362,10 +346,6 @@ for (let i = 0; i < ProjectArray5.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-5');
   btn.innerHTML = ProjectArray5[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(title);
@@ -420,10 +400,6 @@ for (let i = 0; i < ProjectArray6.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('project-button-6');
   btn.innerHTML = ProjectArray6[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   grid.appendChild(card).appendChild(image);
   grid.appendChild(card).appendChild(title);
@@ -480,10 +456,6 @@ for (let i = 0; i < MProjectArray1.length; i += 1) {
   const btn = document.createElement('button');
   btn.classList.add('Mproject-button-1');
   btn.innerHTML = MProjectArray1[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -536,12 +508,8 @@ for (let i = 0; i < MProjectArray2.length; i += 1) {
   li3.innerHTML = MProjectArray2[i].techstack3;
 
   const btn = document.createElement('button');
-  btn.classList.add('Mproject-button-1');
+  btn.classList.add('Mproject-button-2');
   btn.innerHTML = MProjectArray2[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -594,12 +562,8 @@ for (let i = 0; i < MProjectArray3.length; i += 1) {
   li3.innerHTML = MProjectArray3[i].techstack3;
 
   const btn = document.createElement('button');
-  btn.classList.add('Mproject-button-1');
+  btn.classList.add('Mproject-button-3');
   btn.innerHTML = MProjectArray3[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -652,12 +616,8 @@ for (let i = 0; i < MProjectArray4.length; i += 1) {
   li3.innerHTML = MProjectArray4[i].techstack3;
 
   const btn = document.createElement('button');
-  btn.classList.add('Mproject-button-1');
+  btn.classList.add('Mproject-button-4');
   btn.innerHTML = MProjectArray4[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -678,7 +638,7 @@ const MProjectArray5 = [{
   button: 'See Project',
 }];
 
-for (let i = 0; i < MProjectArray1.length; i += 1) {
+for (let i = 0; i < MProjectArray5.length; i += 1) {
   const card = document.createElement('div');
   card.classList.add('project-5');
 
@@ -710,12 +670,8 @@ for (let i = 0; i < MProjectArray1.length; i += 1) {
   li3.innerHTML = MProjectArray5[i].techstack3;
 
   const btn = document.createElement('button');
-  btn.classList.add('Mproject-button-1');
+  btn.classList.add('Mproject-button-5');
   btn.innerHTML = MProjectArray5[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -768,12 +724,8 @@ for (let i = 0; i < MProjectArray6.length; i += 1) {
   li3.innerHTML = MProjectArray6[i].techstack3;
 
   const btn = document.createElement('button');
-  btn.classList.add('Mproject-button-1');
+  btn.classList.add('Mproject-button-6');
   btn.innerHTML = MProjectArray6[i].button;
-  btn.addEventListener('click', () => {
-    popupwindow.classList.toggle('show');
-    maincontainer.style.filter = 'blur(50px)';
-  });
 
   block.appendChild(card).appendChild(image);
   block.appendChild(card).appendChild(title);
@@ -784,8 +736,79 @@ for (let i = 0; i < MProjectArray6.length; i += 1) {
   block.appendChild(card).appendChild(btn);
 }
 
-const popupclose = document.querySelector('.popup-close');
 const popupwindow = document.querySelector('.popup-container');
+const popupclose = document.querySelector('.popup-close');
+const btn1 = document.querySelector('.project-button-1');
+const btn2 = document.querySelector('.project-button-2');
+const btn3 = document.querySelector('.project-button-3');
+const btn4 = document.querySelector('.project-button-4');
+const btn5 = document.querySelector('.project-button-5');
+const btn6 = document.querySelector('.project-button-6');
+const btn7 = document.querySelector('.Mproject-button-1');
+const btn8 = document.querySelector('.Mproject-button-2');
+const btn9 = document.querySelector('.Mproject-button-3');
+const btn10 = document.querySelector('.Mproject-button-4');
+const btn11 = document.querySelector('.Mproject-button-5');
+const btn12 = document.querySelector('.Mproject-button-6');
+
+btn1.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn2.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn3.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn4.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn5.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn6.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn7.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn8.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn9.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+btn10.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn11.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+btn12.addEventListener('click', () => {
+  popupwindow.classList.toggle('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
 
 popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
