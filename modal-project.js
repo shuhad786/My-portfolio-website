@@ -83,6 +83,114 @@ for (let i = 0; i < ProjectArray2.length; i += 1) {
   grid.appendChild(card).appendChild(ul).appendChild(li3);
   grid.appendChild(card).appendChild(btn);
 }
+
+const ProjectArray3 = [{
+  title: 'Data Dashboard <br> Healthcare',
+  img: './images/desktop-project-background-2.png',
+  text: 'A daily selection of privately <br> personalized reads, no accounts or <br> sign-ups required has been <br> the industrys standard.',
+  techstack1: 'html',
+  techstack2: 'Bootstrap',
+  techstack3: 'Ruby on rails',
+  button: 'See Project',
+}];
+
+for (let i = 0; i < ProjectArray2.length; i += 1) {
+const card = document.createElement('div');
+card.classList.add('desktop-project-2');
+
+const image = document.createElement('img');
+image.classList.add('project-background');
+image.src = ProjectArray2[i].img;
+
+const title = document.createElement('h2');
+title.classList.add('desktop-project-title-2');
+title.innerHTML = ProjectArray2[i].title;
+
+const ContentText = document.createElement('p');
+ContentText.classList.add('popup-text-mobile');
+ContentText.innerHTML = ProjectArray2[i].text;
+
+const ul = document.createElement('ul');
+ul.classList.add('project-list');
+
+const li1 = document.createElement('li');
+li1.classList.add('project-item');
+li1.innerHTML = ProjectArray2[i].techstack1;
+
+const li2 = document.createElement('li');
+li2.classList.add('project-item');
+li2.innerHTML = ProjectArray2[i].techstack2;
+
+const li3 = document.createElement('li');
+li3.classList.add('project-item');
+li3.innerHTML = ProjectArray2[i].techstack3;
+
+const btn = document.createElement('button');
+btn.classList.add('project-button-2');
+btn.innerHTML = ProjectArray2[i].button;
+
+grid.appendChild(card).appendChild(image);
+grid.appendChild(card).appendChild(title);
+grid.appendChild(card).appendChild(ContentText);
+grid.appendChild(card).appendChild(ul).appendChild(li1);
+grid.appendChild(card).appendChild(ul).appendChild(li2);
+grid.appendChild(card).appendChild(ul).appendChild(li3);
+grid.appendChild(card).appendChild(btn);
+}
+
+const ProjectArray4 = [{
+  title: 'Data Dashboard <br> Healthcare',
+  img: './images/desktop-project-background-2.png',
+  text: 'A daily selection of privately <br> personalized reads, no accounts or <br> sign-ups required has been <br> the industrys standard.',
+  techstack1: 'html',
+  techstack2: 'Bootstrap',
+  techstack3: 'Ruby on rails',
+  button: 'See Project',
+}];
+
+for (let i = 0; i < ProjectArray2.length; i += 1) {
+const card = document.createElement('div');
+card.classList.add('desktop-project-2');
+
+const image = document.createElement('img');
+image.classList.add('project-background');
+image.src = ProjectArray2[i].img;
+
+const title = document.createElement('h2');
+title.classList.add('desktop-project-title-2');
+title.innerHTML = ProjectArray2[i].title;
+
+const ContentText = document.createElement('p');
+ContentText.classList.add('popup-text-mobile');
+ContentText.innerHTML = ProjectArray2[i].text;
+
+const ul = document.createElement('ul');
+ul.classList.add('project-list');
+
+const li1 = document.createElement('li');
+li1.classList.add('project-item');
+li1.innerHTML = ProjectArray2[i].techstack1;
+
+const li2 = document.createElement('li');
+li2.classList.add('project-item');
+li2.innerHTML = ProjectArray2[i].techstack2;
+
+const li3 = document.createElement('li');
+li3.classList.add('project-item');
+li3.innerHTML = ProjectArray2[i].techstack3;
+
+const btn = document.createElement('button');
+btn.classList.add('project-button-2');
+btn.innerHTML = ProjectArray2[i].button;
+
+grid.appendChild(card).appendChild(image);
+grid.appendChild(card).appendChild(title);
+grid.appendChild(card).appendChild(ContentText);
+grid.appendChild(card).appendChild(ul).appendChild(li1);
+grid.appendChild(card).appendChild(ul).appendChild(li2);
+grid.appendChild(card).appendChild(ul).appendChild(li3);
+grid.appendChild(card).appendChild(btn);
+}
   
 //   const ProjectArray3 = [{
 //     title: 'Multi-Post Stories',
