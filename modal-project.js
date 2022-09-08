@@ -1,6 +1,6 @@
-popupwindow = document.querySelector('.popup-container');
-popupclose = document.querySelector('.popup-close');
-maincontainer = document.querySelector('.main-container');
+const popupwindow = document.querySelector('.popup-container');
+const popupclose = document.querySelector('.popup-close');
+const maincontainer = document.querySelector('.main-container');
 
 const ProjectArray1 = [{
   img: './images/desktop-project-background.png',
