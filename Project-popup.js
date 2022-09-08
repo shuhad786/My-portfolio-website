@@ -14,6 +14,8 @@ const PopupArray = [{
 }];
 
 var PopupWrap = document.querySelector('.popup');
+const popupwindow = document.querySelector('.popup-container');
+const maincontainer = document.querySelector('.main-container');
 
 for (let i = 0; i < PopupArray.length; i += 1) {
   const card = document.createElement('div');
@@ -783,9 +785,7 @@ for (let i = 0; i < MProjectArray6.length; i += 1) {
   block.appendChild(card).appendChild(btn);
 }
 
-var popupwindow = document.querySelector('.popup-container');
 var popupclose = document.querySelector('.popup-close');
-var maincontainer = document.querySelector('.main-container');
 
 popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
