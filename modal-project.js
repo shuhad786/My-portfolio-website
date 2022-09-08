@@ -550,7 +550,7 @@ const MProjectArray4 = [{
   button: 'See Project',
 }];
 
-  for (let i = 0; i < MProjectArray4.length; i += 1) {
+for (let i = 0; i < MProjectArray4.length; i += 1) {
   const card = document.createElement('div');
   card.classList.add('project-4');
 
