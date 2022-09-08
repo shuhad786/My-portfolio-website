@@ -1,7 +1,5 @@
-const PopupWrap = document.querySelector('.popup');
-const popupclose = document.querySelector('.popup-close');
-const popupwindow = document.querySelector('.popup-container');
 const maincontainer = document.querySelector('.main-container');
+const PopupWrap = document.querySelector('.popup');
 
 const PopupArray = [{
   title: 'Multi-Post Stories',
@@ -785,6 +783,9 @@ for (let i = 0; i < MProjectArray6.length; i += 1) {
   block.appendChild(card).appendChild(ul).appendChild(li3);
   block.appendChild(card).appendChild(btn);
 }
+
+const popupclose = document.querySelector('.popup-close');
+const popupwindow = document.querySelector('.popup-container');
 
 popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
