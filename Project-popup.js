@@ -118,7 +118,79 @@ for (let i = 0; i < PopupArray.length; i += 1) {
 
 const popupwindow = document.querySelector('.popup-container');
 const popupclose = document.querySelector('.popup-close');
+const mobile1 = document.querySelector('.Mproject-button-1');
+const mobile2 = document.querySelector('.Mproject-button-2');
+const mobile3 = document.querySelector('.Mproject-button-3');
+const mobile4 = document.querySelector('.Mproject-button-4');
+const mobile5 = document.querySelector('.Mproject-button-5');
+const mobile6 = document.querySelector('.Mproject-button-6');
+const popupopen = document.querySelector('.project-button-1');
+const popupopen2 = document.querySelector('.project-button-2');
+const popupopen3 = document.querySelector('.project-button-3');
+const popupopen4 = document.querySelector('.project-button-4');
+const popupopen5 = document.querySelector('.project-button-5');
+const popupopen6 = document.querySelector('.project-button-6');
 const maincontainer = document.querySelector('.main-container');
+
+mobile1.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile2.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile3.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile4.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile5.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+mobile6.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen2.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen3.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen4.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen5.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
+
+popupopen6.addEventListener('click', () => {
+  popupwindow.classList.add('show');
+  maincontainer.style.filter = 'blur(50px)';
+});
 
 popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
