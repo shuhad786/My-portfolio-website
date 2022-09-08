@@ -1,3 +1,8 @@
+const PopupWrap = document.querySelector('.popup');
+const popupclose = document.querySelector('.popup-close');
+const popupwindow = document.querySelector('.popup-container');
+const maincontainer = document.querySelector('.main-container');
+
 const PopupArray = [{
   title: 'Multi-Post Stories',
   titleDesktop: 'Keeping track of hundreds  of components website',
@@ -12,10 +17,6 @@ const PopupArray = [{
   button1Img: './images/popup-icon-see project.png',
   button2Img: './images/popup-icon-github.png',
 }];
-
-var PopupWrap = document.querySelector('.popup');
-const popupwindow = document.querySelector('.popup-container');
-const maincontainer = document.querySelector('.main-container');
 
 for (let i = 0; i < PopupArray.length; i += 1) {
   const card = document.createElement('div');
@@ -784,8 +785,6 @@ for (let i = 0; i < MProjectArray6.length; i += 1) {
   block.appendChild(card).appendChild(ul).appendChild(li3);
   block.appendChild(card).appendChild(btn);
 }
-
-var popupclose = document.querySelector('.popup-close');
 
 popupclose.addEventListener('click', () => {
   popupwindow.classList.remove('show');
