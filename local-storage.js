@@ -35,14 +35,14 @@ const form2 = document.querySelector('.desktop-form');
 
 const {
   fname, lname, Email2, Message2,
-} = form.elements;
+} = form2.elements;
 
 if (!localStorage.getItem('formObj')) {
-  const formData = {
+  const formData2 = {
     fnameData: '', lnameData: '', EmailData2: '', MessageData2: '',
   };
 
-  localStorage.setItem('formObj', JSON.stringify(formData));
+  localStorage.setItem('formObj', JSON.stringify(formData2));
 }
 
 const reservedata2 = (element, val) => {
