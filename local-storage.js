@@ -34,12 +34,12 @@ Message.textContent = formData.MessageData;
 const form2 = document.querySelector('.desktop-form');
 
 const {
-  fname, lname, Email, Message,
+  fname, lname, Email2, Message,
 } = form.elements;
 
 if (!localStorage.getItem('formObj')) {
   const formData = {
-    fnameData: '', lnameData: '', EmailData: '', MessageData: '',
+    fnameData: '', lnameData: '', EmailData2: '', MessageData: '',
   };
 
   localStorage.setItem('formObj', JSON.stringify(formData));
@@ -56,12 +56,11 @@ const reservedata2 = (element, val) => {
 
 reservedata2(fname, 'fnameData');
 reservedata2(lname, 'lnameData');
-reservedata2(Email, 'EmailData');
+reservedata2(Email2, 'EmailData2');
 reservedata2(Message, 'MessageData');
 
 const formData2 = JSON.parse(localStorage.getItem('formObj'));
 fname.value = formData2.fnameData;
 lname.value = formData2.lnameData;
-Email.value = formData2.EmailData;
-wholeName.value = formData2.wholeNameData;
+Email2.value = formData2.EmailData2;
 Message.textContent = formData2.MessageData;
