@@ -1,4 +1,5 @@
-const form = document.querySelector('.form-info');
+const form = document.querySelector('.form');
+const form2 = document.querySelector('.desktop-form');
 
 const {
   fname, lname, name, email, messagebox,
