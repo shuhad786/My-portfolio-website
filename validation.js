@@ -6,4 +6,14 @@ dForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const emailInput = dEmail.value;
   const emailLowerCase = emailInput.toLowerCase();
+
+  if (emailInput === emailLowerCase) {
+    dForm.submit();
+  } else {
+    message.classList.remove('displayNone');
+  }
+});
+
+dEmail.addEventListener('focus', () => {
+  message.classList.add('displayNone');
 });
