@@ -2093,6 +2093,16 @@
     padding: 14px;
   }
 
+  .redColor {
+    color: rgb(228, 84, 84);
+    font-size: 20px;
+    height: auto;
+  }
+
+  .displayNone {
+    display: none;
+  }
+
   .desktop-form-textbox {
     border: none;
     background: #fbf8f7;
