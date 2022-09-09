@@ -752,6 +752,19 @@
     background: #fff5e1;
   }
 
+  .redColor2 {
+    color: rgb(228, 84, 84);
+    font-size: 16px;
+    height: auto;
+    margin-left: 5.5%;
+    margin-top: -40px;
+    margin-bottom: 15px;
+  }
+
+  .displayNone2 {
+    display: none;
+  }
+
   .contact-divider {
     border: #dbd8d7 solid 1px;
     margin-top: 124px;
@@ -2091,6 +2104,16 @@
     border-bottom: #dbd8d7 2px solid;
     margin-top: 50px;
     padding: 14px;
+  }
+
+  .redColor {
+    color: rgb(228, 84, 84);
+    font-size: 20px;
+    height: auto;
+  }
+
+  .displayNone {
+    display: none;
   }
 
   .desktop-form-textbox {
